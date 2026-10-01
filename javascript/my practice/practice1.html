@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>practice1</title>
+</head>
+<body>
+<script>
+	//6 display the month based on number 1 to 12 using switch
+
+var month = 8;
+switch (month){
+case 1 :
+	document.write("jan");
+	break;
+case 2:
+	document.write("feb");
+	break;
+case 3:
+	document.write("mar");
+	break;
+case 4: 
+	document.write("april");
+	break;
+case 5:
+	document.write("may");
+	break;
+case 6:
+	document.write ("june");
+	break;
+case 7:
+	document.write("july"); 
+	break;
+case 8: 
+	document.write("aug");
+	break;
+case 9:
+	document.write("sep");
+	break;
+case 10:
+	document.write("oct");
+	break;
+case 11:
+	document.write("nov");
+	break;
+case 12:
+	document.write("dec");
+	break;
+default:
+	document.write("invalid month");
+}
+
+//7) simple calculator using swtich:
+document.write("<br>");
+
+var operator = "+";
+var a= 10;
+var b= 20;
+switch(operator)
+{
+	case "+":
+	document.write(a+b +"num is  added");
+	break;
+    case "-":
+    	document.write(a-b+ "num is subtracted");
+    	break;
+    case"*":
+    	document.write(a*b+ "num is multiplied");
+    	break;
+
+    case"/":
+    	document.write(a/b+ "num is divided");
+    	break;
+    default:
+    	document.write("invalid operator");
+}
+document.write("<br>");
+
+//8) even or odd using tertatory operator.
+
+var a = 2;
+
+var  result = (a%2==0) ? "even" : "odd";
+{
+	document.write(a + "is" + result +"number");
+}
+document.write("<br>");
+
+//9) greater of 2 no using tertatory operator.
+
+var a=20;
+var b =10;
+
+var result = (a>b) ? a : b;
+{
+	document.write(result + "is the greater number");
+}
+document.write("<br>");
+
+//10) student passed or failed (35>=) pass using tertatory operator.
+
+var student = 55;
+
+var result= (35<=student)?"pass":"fail";
+{
+	document.write(result +"");
+}
+	
+
+</script>
+</body>
+</html>

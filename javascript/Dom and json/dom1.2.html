@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dom1.2</title>
+</head>
+<body>
+<script>
+
+document.write("welcome to javascript" +"<br>");
+
+document.writeln("welcome to javascript");
+
+function showName(){
+	alert(document.form1.username.value);
+}
+
+function show(){
+	alert(document.getElementById("name").value);
+}
+
+function a()
+{
+	var g = document.getElementsByName("gender");
+	document.write(g.length);
+}
+
+function n(){
+	var d= document.getElementsByTagName("p");
+document.write(d.length);
+}
+
+function s() {
+var c = document.getElementsByClassName("demo");
+document.write(c.length);
+}
+
+function aa(){
+document.getElementById("demo").innerHTML = "<b>Hello</b>";
+}
+
+function aaa(){
+	document.getElementById("dss").innerText ="welcome to js";
+}
+
+
+</script>
+<form name="form1">
+	<input type="text" name="username">
+	<input type="button" onclick="showName();" value="show">
+</form>
+<br>
+	<input type="text" id="name" value="">
+	<button onclick="show();"> click me </button>
+<br>
+
+
+<input type ="radio" name="gender" value="male">male
+<input type="radio" name="gender" value="female">female
+<button onclick="a();"> click me </button> 
+
+<p> paragraph1 </p>
+<p> paragraph2 </p>
+<button onclick="n();">click click</button>
+
+
+<p class="demo"></p>
+<button onclick="s();">click me</button>
+
+<br>
+
+<p id="demo"></p>
+<button onclick="aa();">click me</button>
+
+<br>
+
+<p id="dss"></p>
+<button onclick="aaa();">click </button>
+
+</body>
+</html>

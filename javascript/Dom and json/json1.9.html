@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>json1.9</title>
+</head>
+<body>
+<script>
+	var student ={
+		"name":"mehreen",
+		"age":23,
+		"city":"punjab"
+	};
+	document.write(student.name);
+	document.write("<br>");
+	document.write(student.age);
+	document.write("<br>");
+	document.write(student.city);
+	document.write("<br>");
+
+	var stud ={
+		"name":"mehreen",
+		"age":23,
+		"city":"punjab"
+	};
+
+	var jasondata = JSON.stringify(stud);
+	document.write(jasondata);
+	document.write("<br>");
+
+	var st ='{"name":"mehreen","age":23,"city":"punjab"}'
+	var data = JSON.parse(st);
+	document.write(data.age);
+</script>
+</body>
+</html>

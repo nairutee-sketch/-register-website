@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dom1.4</title>
+</head>
+<body>
+<script>
+	document.write("welcome to javascript" );
+	document.write("<br>");
+
+	document.writeln("welcome");
+	document.writeln("js");
+document.write("<br>");
+
+function showname(){
+	alert(document.form1.username.value);
+}
+
+function byid()
+{
+	alert(document.getElementById("name").value);
+}
+
+function byname(){
+	var g= document.getElementsByName("gender");
+	document.write(g.length);
+}
+
+function bytag(){
+	var tg = document.getElementsByTagName("p")
+	document.write(tg.length);
+}
+
+function byclass(){
+	var cl = document.getElementsByClassName("demo");
+	document.write(cl.length);
+}
+
+function aa(){
+	var i = document.getElementById("demo1").innerHTML ="<b> Hello!!</b>";
+}
+
+function aaa(){
+	var j = document.getElementById('demo2').innerText="<b> hello!!</b>";
+}
+
+</script>
+<form name="form1">
+	<input type="text" name="username"><br>
+	<input type="button" value="show" onclick="showname();">
+</form>
+
+<input type="text" id="name">
+<button onclick="byid();"> click me </button>
+<br>
+
+<input type="radio" name="gender" value="male">male
+<input type="radio" name="gender" value="female">female
+<button onclick="byname();"> click </button>
+
+<p> paragragh1 </p>
+<p> paragragh2 </p>
+<button onclick="bytag();">click click </button>
+
+<p class="demo"></p>
+<button onclick="byclass();"> submit </button>
+
+<p id="demo1"></p>
+<button onclick="aa();">submit me</button>
+
+<p id="demo2"></p>
+<button onclick="aaa();">click me</button>
+	
+
+
+
+
+</body>
+</html>

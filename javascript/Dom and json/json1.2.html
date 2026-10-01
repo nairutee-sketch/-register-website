@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>json1.2</title>
+</head>					
+<body>
+<script>
+	var student = {
+		"name": "abcd",
+		"age": 20,
+		"city": "mumbai"
+         };
+	document.write("name:"+student.name+"<br>");
+	document.write("age:"+student.age+"<br>");
+	document.write("city:"+student.city+"<br>");
+	document.write("<br>");
+
+	//js obj to json
+
+var stud = {
+	"name" : "aryan",
+	"age": 25,
+	"city":"mumbai"
+};
+var jsondata = JSON.stringify(stud);
+document.write(jsondata);
+
+// json to js obj
+document.write("<br>");
+var jsond ='{"name":"arhaan","age":24,"city":"mumbai"}'
+
+var st = JSON.parse(jsond);
+document.write(st.city);
+document.write("<br>");
+document.write(st.name);
+document.write("<br>");
+document.write(st.age);
+
+
+</script>
+</body>
+</html>

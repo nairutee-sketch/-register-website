@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>method</title>
+</head>
+<body>
+<script>
+	//prompt()
+     let name = prompt("enter your name");
+	document.write(name);
+
+     //console.log - ask sir
+   /* console.log("hello world");*/
+
+	//alert
+	alert("welcome");
+
+    // confirm
+	let result = confirm("do you want to continue?");
+	document.write(result);
+
+	//parseInt
+	let x = parseInt("25");
+	document.write(x);
+
+	//parsefloat
+	var x = parseFloat("12.5");
+	document.write(x);
+
+	//number
+    let x = Number("100");
+	document.write(x);
+
+	//string - ask sir
+	/*let s = String(123);
+	document.write(s);*/
+
+ //boolean
+	document.write(Boolean(1)); //true
+	document.write(Boolean(0)); //false
+
+	//isNaN (not a number)
+    document.write(isNaN("hello")); //true
+	document.write(isNaN(25)); //false
+
+	//Math.random
+	document.write(Math.random());
+
+	//math.floor
+	document.write(Math.floor(5.9));//5
+
+	//math.ceil
+	document.write(Math.ceil(5.1));//6
+
+	//math.round ask sir
+	document.write(Math.round(5.6)); //6
+
+	//Math.max
+	document.write(Math.max(10,20,45,89)); //89
+
+	//Math.min
+	document.write(Math.min(10,30,20)); //10
+
+	//setTimeout
+	setTimeout(()=> {
+		document.write("Hello");
+	},2000);
+
+	//setInterval
+	setInterval(() =>{
+		document.write("running");
+	},1000);
+
+	//Date()
+    let a= new Date()
+	document.write(a);
+
+	//Array.push()
+    let arr=[1,2,3,4]
+	arr.push(5)
+	document.write(arr);
+
+	//array.pop()
+	let arr=[1,2,3,4,5]
+	arr.pop();
+	document.write(arr);
+
+	//array.shift()
+    let arr =[1,2,3,5]
+	arr.shift();
+	document.write(arr);
+
+	//array.unshift()
+   let arr=[2,3,4,5]
+	arr.unshift(1);
+	document.write(arr);
+
+	//array.includes()
+    let arr=[1,2,3]
+	document.write(arr.includes(2));  //true
+
+	//String.length
+	let str = "javascript"
+	document.write(str.length); //10
+
+	//toUpperCase()
+	let str = "hello";
+	document.write(str.toUpperCase());
+
+	//toLowerCase
+	let str ="HELLO";
+	document.write(str.toLowerCase());
+
+	//trim()
+	let str= "   Hello   world ";
+	document.write(str.trim());
+
+
+    //split()
+
+    let str = "ABC";
+    document.write(str.split(""));
+
+    //join()
+    let arr= ["A","B","C"];
+    document.write(arr.join("-")); //A-B-C
+
+    //IndexOf()
+     let arr = [10,20,30];
+     document.write(arr.indexOf(30));
+
+	//slice - ask sir
+	/*let arr = [10,20,30,40,50];
+	document.write(arr.slice(3,4));*/
+
+	//replace 
+    let str = "I like java"
+	document.write(str.replace("java","javascript"));
+</script>
+</body>
+</html>

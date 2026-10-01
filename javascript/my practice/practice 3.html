@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>practice3</title>
+</head>
+<body>
+<script>
+	//9) print even no from 1to 50using while loop
+
+var num =1;
+ while(num<=50){
+ 	if(num%2==0){
+ 		document.write(num+"are the even number"+"<br>");
+ 	}
+ 		num++;
+ 		
+ 	
+   
+ }
+ document.write("<br>");
+
+ //10) to count 10 down to 1 using while loop
+
+ var num =10
+ while(num>=1)
+ {
+ 	document.write(num+ "<br>");
+ 	num--;
+ }
+	document.write("<br>");
+
+
+//11) print no 1 to 10 using do while loop
+ var a=1;
+ do{
+ 	document.write(a+"<br>");
+ 	a++;
+ }
+ while(a<=10)
+
+ document.write("<br>");
+
+//12) to display 1st 5 multiples of 3 using do while.
+
+var a=1;
+do {
+	document.write(3*a+ "<br>");
+	a++;
+}
+while(a<=5)
+	document.write("<br>");
+
+
+	//13) print number from 1 to 20 but stop when no is 10 using break.
+
+	var a;
+   for(a=1;a<=20;a++){
+	if(a==10)
+		break;
+	document.write(a+"<br>");
+}
+
+//14) print numbers from 1 to 20, but skip multiples of 3 using continue.
+
+var a;
+for(a=1;a<=20;a++){
+	if(a%3==0)
+		continue;
+	document.write(a+"<br>");
+}
+
+//15) print numbers from 1 to 50. Print only odd numbers using a loop and continue.
+
+var a;
+for(a=1;a<=50;a++){
+	if(a%2==0)
+		continue;
+	document.write(a+"<br>");
+}
+</script>
+</body>
+</html>

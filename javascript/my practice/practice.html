@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>practice</title>
+</head>
+<body>
+<script>
+	//1)positive or negative numbers
+
+	var num= 45;
+	if(num>=0){
+		document.write(num+"is a positive number");
+	}
+	else if (num<=0){
+		document.write(num+ "is a negative number");
+	}
+	else {
+		document.write("0");
+	}
+	document.write("<br>");
+
+	//2) eligible to vote 	
+    var age=19;
+	if(age>=18){
+		document.write("you can vote");
+	}
+	else {
+		document.write("you can't vote");
+	}
+document.write("<br>");
+
+	//3) greater of two number
+var a=90;
+var b=70;
+if(a>=b){
+	document.write(a+ "a is greater");
+}
+else {
+	document.write(b+ "b is greater");
+}
+document.write("<br>");
+
+//4 even or odd
+var a=90	;
+if(a%2==0){
+	document.write(a+"is a even number");
+}
+else {
+	document.write(a+ "is a odd number");
+}
+document.write("<br>");
+
+
+//5 display the day based on number 1-7 using swtich case.
+var daynumber = 4;
+
+switch(daynumber){
+case 1:
+	document.write("Monday");
+	break;
+case 2:
+	document.write("tuesday");
+	break;
+case 3:
+	document.write("wednesday");
+	break;
+case 4:
+	document.write("thursday");
+	break;
+case 5:
+	document.write("friday");
+	break;
+case 6:
+	document.write("saturday");
+	break;
+case 7:
+	document.write("sunday");
+	break;
+default:
+	document.write("invalid day");
+}
+
+</script>
+</body>
+</html>

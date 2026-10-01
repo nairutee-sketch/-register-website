@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>practice2</title>
+</head>
+<body>
+<script>
+	//1) positive or negative number using if
+var num=10;
+if(num>=0){
+	document.write("number is positive");
+}
+else {
+	document.write("number is negative");
+}
+document.write("<br>");
+
+//2) number is even or odd using if..else
+var no = 5;
+if(no%2==0){
+	document.write("no is even");
+}
+else{
+	document.write("no is odd");
+}
+document.write("<br>");
+
+//3) greater of 2 no using if...else
+var a =5;
+var b=8;
+if (a>b){
+	document.write("a is greater" );
+}
+else {
+	document.write("b is greater");
+}
+document.write("<br>");
+
+//4) eligibile to vote age>=18 using if else.
+var age=19;
+if(age>=18){
+	document.write("eligible to vote");
+}
+else {
+	document.write("not eligible to vote");
+}
+document.write("<br>");
+
+//5) grade based on marks using if elseif ...
+var a =89;
+var b= 45;
+var c= 100;
+var total= a+b+c;
+var per = total*100/300;
+
+document.write("your total is" +total+ "<br>");
+document.write("your % is " +per+"<br>");
+
+if(per<= 100 && per>=80){
+	document.write("A grade");
+}
+else if(per>=79 && per>=60)
+{
+	document.write("B grade");
+}
+else if (per>=59 && per>=40){
+	document.write("c grade");
+}
+else{
+	document.write("d grade");
+}
+document.write("<br>");
+
+//6) print 1 to 10 no using for loop
+
+var a;
+for(a=1;a<=10;a++){
+	document.write(a+ "<br>");
+}
+document.write("<br>");
+
+//7) multiplication of given number using for loop
+
+var a=10;
+var b;
+for(b=1;b<=10;b++){
+	document.write(+a+ "x" +b+ "=" +a*b+ "<br>");
+}
+
+//8)find sum of no from 1 to 100 using for loop.
+
+var total =0;
+var i;
+for(i=1;i<=100;i++){
+total = total + i;
+	document.write(total+"<br>");
+
+}
+document.write("<br>");
+
+
+
+
+</script>
+</body>
+</html>

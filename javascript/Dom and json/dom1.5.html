@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dom1.5</title>
+</head>
+<body>
+<script>
+	document.write("hello javascript");
+	document.write("<br>");
+
+	document.writeln("this is");
+	document.writeln("javascipt");
+    document.write("<br>");
+
+    function showname(){
+    	alert(document.form1.username.value);
+    }
+
+    function byid(){
+    	alert(document.getElementById("name").value);
+    }
+
+    function byname(){
+    	var g = document.getElementsByName("gender");
+    	document.write(g.length);
+    }
+
+    function bytag(){
+    	var tg = document.getElementsByTagName("p");
+    	document.write(tg.length);
+    }
+
+    function byclass(){
+    	var cl = document.getElementsByClassName("demo");
+    	document.write(cl.length);
+    }
+
+function aa(){
+	var i= document.getElementById("demo1").innerHTML="<b>this is javascript</b>";
+}
+
+function aaa(){
+	var j= document.getElementById("demo2").innerText="this is a javascipt";
+}
+
+
+</script>
+<form name="form1">
+	<input type="text" name="username"><br>
+	<input type="button" onclick="showname();" value="click">
+</form>
+
+<input type="text" id="name">
+<input type="button" onclick="byid();" value="click me">
+
+<input type="radio" name="gender" value="male">male
+<input type="radio" name="gender" value="female">female
+<button onclick="byname();"> click me</button>
+
+<p> paragraph1 </p>
+<p> paragraph2 </p>
+<button onclick="bytag();">click </button>
+
+<p class="demo"></p>
+<button onclick="byclass();">click click</button>
+
+<p id="demo1"></p>
+<button onclick="aa();">click1</button>
+
+<p id="demo2"></p>
+<button onclick="aaa();">click2</button>
+
+
+
+
+
+
+
+</body>
+</html>

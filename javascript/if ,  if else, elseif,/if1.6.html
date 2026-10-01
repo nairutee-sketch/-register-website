@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>if1.6</title>
+</head>
+<body>
+<script>
+	var age=21;
+	if (age>=18)
+	{
+		document.write("you can vote");
+	}
+ document.write("<br>");
+
+	var num=3;
+	if(num%2==0){
+		document.write(+num+ "is a even number");
+	}
+	else {
+		document.write(+num+"is not an even number");
+	}
+	document.write("<br>");
+
+var a=10;
+var b=20;
+var c=30;
+
+if(a>b && a>c)
+{
+	document.write(+a+ "is the greatest number");
+}
+else if (b>a && b>c)
+{
+	document.write(+b+ "is the gratest number");
+}
+else {
+	document.write(+c+"is the greatest number");
+}
+
+document.write("<br>");
+
+var age=2;
+if(age>=18){
+	document.write("you can vote");
+}
+else{
+	document.write("you cant vote");
+}
+
+document.write("<br>");
+
+var no=-7;
+if (no>=0){
+	document.write(+no+ "number is positive");
+}
+else if (no<=0) {
+	document.write(+no+"number is negative");
+}
+else {
+	document.write("number is 0");
+}
+
+var hindi=45;
+var english=24;
+var maths=66;
+var total= hindi+english+maths;
+var per=total*100/300;
+
+document.write("<br>");
+document.write("you got"+hindi+"marks in hindi");
+document.write("<br>");
+document.write("you got"+english+"marks in english");
+document.write("<br>");
+document.write("you got"+maths+"marks in maths");
+document.write("<br>");
+document.write("you got"+total+"marks in total");
+document.write("<br>");
+document.write("you got"+per+"%");
+document.write("<br>");
+
+if(per>=100 && per>=80){
+	document.write("first class");
+}
+else if (per<=79 && per>=60)
+{
+	document.write("second class");
+}
+else if (per<=59 && per>=40)
+{
+	document.write("third class");
+}
+else {
+	document.write("fail");
+}
+</script>
+</body>
+</html>

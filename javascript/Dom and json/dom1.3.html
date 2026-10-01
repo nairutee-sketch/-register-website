@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dom1.3</title>
+</head>
+<body>
+<script>
+	document.write("welcome to javascript");
+	document.write("<br>");
+
+	document.writeln("welcome");
+	document.writeln("js");
+document.write("<br>");
+
+	function showname()
+	{
+       alert(document.form1.username.value);
+	}
+
+function show()
+{
+	alert(document.getElementById("name").value);
+}
+
+function radio() {
+	var g = document.getElementsByName("gender");
+	document.write(g.length);
+}
+
+function tag(){
+	var t= document.getElementsByTagName("p");
+	document.write(t.length);
+}
+
+function cla(){
+	var c = document.getElementsByClassName("demo");
+	document.write(c.length);
+}
+
+function aa(){
+	document.getElementById("demo1").innerHTML="<b> this is js</b>";
+}
+
+function aaa(){
+	document.getElementById("demo2").innerText="<b> this is js </b>"
+}
+
+</script>
+
+<form name="form1">
+<input type="text" name="username"> <br>
+<input type="button" value="show" onclick="showname();">
+</form>
+<br>
+
+<input type="text" id="name">
+<button onclick="show();">submit me</button> 
+<br>
+
+<input type="radio" name="gender" value="male">male
+<input type="radio" name="gender" value="female">female
+<button onclick="radio();"> click me </button>
+<br>
+
+<p> paragraph1 </p>
+<p> paragraph2 </p>
+<button onclick="tag();">click </button>
+<br>
+
+<p class="demo"></p>
+<button onclick="cla();">click click </button>
+<br>
+
+<p id="demo1"></p>
+<button onclick="aa();">click me</button>
+<br>
+<p id="demo2"></p>
+<button onclick="aaa();">click me plz</button>
+
+</body>
+</html>
