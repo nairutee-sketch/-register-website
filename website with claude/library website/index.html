@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Willow &amp; Page — Buy or read a book</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="site-header" id="siteHeader">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="brand" href="#top">
+        <span class="brand-mark">W&amp;P</span>
+        <span class="brand-name">Willow &amp; Page</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-lg-auto gap-lg-4">
+          <li class="nav-item"><a class="nav-link" href="#catalog">Catalog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#picks">Staff picks</a></li>
+          <li class="nav-item"><a class="nav-link" href="#join">Join</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3 nav-tools">
+          <div class="search-box">
+            <input type="search" id="searchInput" placeholder="Search title or author" aria-label="Search books">
+          </div>
+          <button class="cart-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartPanel" aria-label="Open cart">
+            Cart <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-7">
+        <p class="kicker">A neighborhood library that also sells copies</p>
+        <h1 class="hero-title">Buy the copy.<br>Or start reading<br>right now.</h1>
+        <p class="hero-sub">Every book on our shelves opens two ways: order a printed
+          copy for your own shelf, or read a free sample straight in your browser
+          before you decide. No membership card required to browse.</p>
+        <div class="d-flex flex-wrap gap-3 hero-actions">
+          <a href="#catalog" class="btn btn-brass">Browse the catalog</a>
+          <a href="#picks" class="btn btn-outline-ink">See staff picks</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong id="statBooks">0</strong><span>titles on the shelf</span></div>
+          <div><strong>6</strong><span>genres, sorted like a real library</span></div>
+          <div><strong>0&nbsp;min</strong><span>wait to start reading</span></div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="drawer" aria-hidden="true">
+          <div class="drawer-label">Card Catalog</div>
+          <div class="drawer-card" style="--r:-6deg;">
+            <span class="call-number">813.54 · Fiction</span>
+            <strong>The Long Way to Harrow</strong>
+            <em>Odalys Fenn</em>
+          </div>
+          <div class="drawer-card" style="--r:3deg;">
+            <span class="call-number">133.8 · Mystery</span>
+            <strong>Six Doors, One Key</strong>
+            <em>R. M. Castellan</em>
+          </div>
+          <div class="drawer-card" style="--r:-2deg;">
+            <span class="call-number">808.1 · Poetry</span>
+            <strong>Weather for Beginners</strong>
+            <em>Juno Ade</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATALOG ============ -->
+<section class="catalog" id="catalog">
+  <div class="container">
+    <div class="section-head">
+      <h2>The shelves</h2>
+      <p>Filter by genre or search — the count updates as you go.</p>
+    </div>
+
+    <div class="genre-pills" id="genrePills">
+      <button class="pill active" data-genre="all">All</button>
+      <button class="pill" data-genre="Fiction">Fiction</button>
+      <button class="pill" data-genre="Mystery">Mystery</button>
+      <button class="pill" data-genre="Sci-Fi">Sci-Fi</button>
+      <button class="pill" data-genre="Romance">Romance</button>
+      <button class="pill" data-genre="Nonfiction">Nonfiction</button>
+      <button class="pill" data-genre="Poetry">Poetry</button>
+    </div>
+
+    <p class="result-count" id="resultCount"></p>
+
+    <div class="row g-4" id="bookGrid"></div>
+    <p class="empty-state d-none" id="emptyState">Nothing on this shelf yet — try another genre or clear your search.</p>
+  </div>
+</section>
+
+<!-- ============ STAFF PICKS ============ -->
+<section class="picks" id="picks">
+  <div class="container">
+    <div class="section-head light">
+      <h2>Staff picks this month</h2>
+      <p>Three the booksellers keep putting back on the front table.</p>
+    </div>
+    <div class="row g-4" id="picksRow"></div>
+  </div>
+</section>
+
+<!-- ============ JOIN ============ -->
+<section class="join" id="join">
+  <div class="container">
+    <div class="join-card row align-items-center g-4">
+      <div class="col-lg-7">
+        <h2>Get one new recommendation a week</h2>
+        <p>Short, specific, no spam — one bookseller pick every Friday, matched to the genres you read most.</p>
+      </div>
+      <div class="col-lg-5">
+        <form id="joinForm" class="join-form" novalidate>
+          <input type="email" id="joinEmail" placeholder="you@email.com" required aria-label="Email address">
+          <button type="submit" class="btn btn-brass">Notify me</button>
+        </form>
+        <p class="join-feedback" id="joinFeedback" aria-live="polite"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <span class="brand-mark">W&amp;P</span>
+        <span class="brand-name">Willow &amp; Page</span>
+        <p class="foot-note">A small catalog, kept in order. Open every day, no late fees.</p>
+      </div>
+      <div class="col-md-4">
+        <h6>Visit</h6>
+        <p>14 Elderberry Lane<br>Reading Room open 9am–8pm</p>
+      </div>
+      <div class="col-md-4">
+        <h6>Browse</h6>
+        <p><a href="#catalog">Full catalog</a><br><a href="#picks">Staff picks</a><br><a href="#join">Weekly pick email</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">All titles and authors on this page are fictional, made for demonstration.</div>
+  </div>
+</footer>
+
+<!-- ============ READ SAMPLE MODAL ============ -->
+<div class="modal fade" id="readModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div>
+          <span class="modal-call-number" id="modalCallNumber"></span>
+          <h5 class="modal-title" id="modalTitle"></h5>
+          <em id="modalAuthor"></em>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="sample-label">First pages</p>
+        <p id="modalExcerpt" class="excerpt"></p>
+      </div>
+      <div class="modal-footer">
+        <span class="modal-price" id="modalPrice"></span>
+        <button type="button" class="btn btn-brass" id="modalAddToCart">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CART OFFCANVAS ============ -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartPanel" aria-labelledby="cartPanelLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="cartPanelLabel">Your cart</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+    <div id="cartItems" class="flex-grow-1"></div>
+    <p class="empty-cart d-none" id="emptyCart">Your cart is empty. Add a book from the catalog.</p>
+    <div class="cart-total-row">
+      <span>Total</span>
+      <strong id="cartTotal">$0.00</strong>
+    </div>
+    <button class="btn btn-brass w-100" id="checkoutBtn" disabled>Checkout</button>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
