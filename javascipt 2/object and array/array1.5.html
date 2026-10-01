@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>array1.5</title>
+</head>
+<body>
+	<script>
+//define array
+var a=[1,2,3,4,5]
+document.write(a);
+document.write("<br>");
+
+//array with for loop
+var i;
+var n =["india","usa","dubai"]
+for(i=0;i<n.length;i++){
+	document.write(n[i] +"<br>");
+}
+document.write("<br>");
+//array with new
+var num;
+var count =new Array();
+count[0] ="japan";
+count[1]="usa";
+count[2]="india";
+
+for(num=0;num<count.length;num++){
+	document.write(count[num]+"<br>");
+}
+document.write("<br>");
+//array constructor
+
+var name = new Array("rohit","raj","harsh");
+for(var i=0;i<name.length;i++){
+	document.write(name[i]);
+}
+document.write("<br>");
+
+var cars =["bmw","accord","honda"]
+
+document.write(cars[1]);
+document.write("<br>");
+document.write(cars[0]);
+document.write("<br>");
+var last =[cars.length-1];
+document.write(last);
+document.write("<br>");
+
+cars[1] = "ferrari";
+document.write(cars +"<br>");
+document.write("<br>");
+cars.push("cc");
+document.write(cars +"<br>");
+document.write("<br>");
+cars.pop();
+document.write(cars +"<br>");
+document.write("<br>");
+
+var arr1=[1,2]
+var arr2=[3.4]
+
+document.write(arr1.concat(arr2));
+
+document.write("<br>");
+var mynumber = [1,2,3,4,5]
+mynumber.forEach(num =>{
+     document.write(num);
+});
+
+
+</script>
+</body>
+</html>

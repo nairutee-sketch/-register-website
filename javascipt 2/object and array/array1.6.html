@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>array1.6</title>
+</head>
+<body>
+	<script>
+//define array
+var a=[1,2,3,4,5]
+document.write(a);
+document.write("<br>");
+
+//array using for loop 
+var i;
+var n=["india","usa","france"]
+for(i=0;i<n.length;i++){
+	document.write(n[i] +"<br>");
+}
+//array using new
+
+var a = new Array()
+ a[0] = "japan";
+ a[1]="usa";
+ a[2]="india";
+ for(var num = 0;num<a.length;num++){
+ 	document.write(a[num] +"<br>");
+ }
+document.write("<br>");
+ //array constructor
+ var name = new Array("rohit","jay","harsh")
+ for(var i=0;i<name.length;i++){
+ 	document.write(name[i]);
+ }
+document.write("<br>");
+var cars = ["bmw","honda","gtf"]
+
+document.write(cars[0]);
+document.write("<br>");
+
+document.write(cars[1]);
+document.write("<br>");
+
+var last = cars.length-1;
+document.write(last);
+
+cars[1] ="ferrari";
+document.write(cars +"<br>");
+document.write("<br>");
+
+cars.push("devolt");
+document.write(cars +"<br>");
+document.write("<br>");
+
+cars.pop();
+document.write(cars +"<br>");
+document.write("<br>");
+
+var arr1=[1,2]
+var arr2=[3,4]
+document.write(arr1.concat(arr2));
+document.write("<br>");
+
+var mynumber=[1,2,3,4,5]
+mynumber.forEach(num=>{
+	document.write(num)
+});
+</script>
+</body>
+</html>

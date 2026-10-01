@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>string1.5</title>
+</head>
+<body>
+<script>
+	var string ="javascript";
+	document.write(string);
+document.write("<br>");
+
+	var str = new String("programming");
+	document.write(str);
+	document.write("<br>");
+
+	//string methods
+
+	//1) charAt()
+
+document.write(string.charAt(7));
+document.write("<br>");
+//2) concat()
+var str1 ="20";
+var str2 ="26";
+document.write(str1.concat(str2));
+document.write("<br>");
+//3) indexOf()
+document.write(string.indexOf('t'));
+document.write("<br>");
+//4)lastIndexOf()
+document.write(string.lastIndexOf('s'));
+document.write("<br>");
+//5)toLowerCase()
+var str1 ="PROGRAM";
+document.write(str1.toLowerCase());
+document.write("<br>");
+//6)toUpperCase()
+var str2 ="program";
+document.write(str2.toUpperCase());
+document.write("<br>");
+//7)slice
+var str2 = "javascript programming";
+document.write(str2.slice(4,22));
+</script>
+</body>
+</html>

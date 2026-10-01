@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>string</title>
+</head>
+<body>
+<script>
+	//string literal
+	/*var name = "javascript";
+	var city = "mumbai";
+	document.write(name);
+	document.write("<br>");
+	document.write(city);
+document.write("<br>");
+
+	//string object (new keyword)
+	var name = new String("javascript");
+	document.write(name);
+document.write("<br>");
+
+	//string method 
+//1) charAt()
+	var text ="javascript";
+
+	document.write(text.charAt(0));
+	document.write("<br>");
+	document.write(text.charAt(4));
+	document.write("<br>");
+	document.write(text.charAt(9));
+	document.write("<br>");
+//2) concat ()
+	var str1 = "java";
+	var str2 = "script";
+	document.write(str1.concat(str2));
+	document.write("<br>");
+
+	//3) indexOf()
+
+	document.write(text.indexOf('s'));
+	document.write("<br>");
+	document.write(text.indexOf('java'));
+    document.write("<br>");
+
+//4) lastIndexOf()
+document.write(text.lastIndexOf('s'));
+document.write("<br>");
+
+//5) ToLowerCase()
+var text = "PROGRAMINNG";
+document.write(text.toLowerCase());
+document.write("<br>");
+
+//6)ToUpperCase()
+var text = "programming";
+document.write(text.toUpperCase());
+document.write("<br>");
+
+//7) slice()
+document.write(text.slice(2,6));*/
+
+//date object
+/* var today = new Date();
+document.getElementById("txt").innerHTML=today;
+
+var date = new Date();
+var day =date.getDate();
+var month =date.getMonth()+1;
+var year =date.getFullYear();
+document.write("<br> Date is:"+day+"/"+month+"/"+year+);
+
+document.write("<br>");
+
+var today = new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+document.getElementById("txt1").innerHTML=h+":"+m+":"+s+;*/
+
+</script>
+<!--Current date and time:<span id="txt"></span>
+<br>
+Current Time:<span id="txt1"></span>-->
+<script>
+/*	var a = new Date();
+	document.write(a);
+	var day = a.getDate();
+var month = a.getMonth()+1;
+var year = a.getFullYear();
+document.write("<br> Date is:"+day+"/"+month+"/"+year);
+document.write("<br>");*/
+
+function aa()
+{
+	var today = new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+document.getElementById("txt1").innerHTML = h+":"+m+":"+s;
+}
+</script>
+<h1 id="txt1">Today's time is  :  </h1>
+<button onclick="aa();">click me</button>
+</body>
+</html>

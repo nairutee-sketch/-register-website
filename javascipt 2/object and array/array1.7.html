@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>array1.7</title>
+</head>
+<body>
+<script>
+	var a=[1,2,3,4,5]
+	document.write(a);
+    document.write("<br>");
+
+    var i;
+    var n=["india","usa","dubai"]
+    for(i=0;i<n.length;i++){
+    	document.write(n[i] +"<br>");
+    }
+
+   var n = new Array()
+   n[0]="dubai";
+   n[1]="usa";
+   n[2]="chennai";
+
+   for(var i=0;i<n.length;i++){
+   	document.write(n[i] +"<br>");
+   }
+
+   var n = new Array("india","usa","russia")
+   for(var i=0;i<n.length;i++){
+   	document.write(n[i]+"<br>");
+   }
+
+   var cars = ["honda","bmw","accord"]
+
+   document.write(cars[1]);
+   document.write("<br>");
+   document.write(cars[0]);
+   document.write("<br>");
+   var last = cars.length-1
+   document.write(last);
+   document.write("<br>");
+   cars[1] = "ferrari";
+   document.write(cars);
+   document.write("<br>");
+   cars.push("mercedes");
+   document.write(cars);
+   document.write("<br>");
+   cars.pop();
+   document.write(cars);
+   document.write("<br>");
+
+   var arr1=[1,2]
+   var arr2=[2,3]
+   document.write(arr1.concat(arr2));
+   document.write("<br>");
+
+   var mynumber=[1,2,3,4,5]
+   mynumber.forEach(num=>{
+   	document.write(num);
+   });
+
+
+
+
+</script>
+</body>
+</html>

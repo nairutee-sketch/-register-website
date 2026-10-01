@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<script>
+	/*function validateform(){
+var name = document.myform.name.value;
+		var password = document.myform.password.value;
+if (name==null || name=="")
+		{
+			alert("name cannot be empty");
+		}
+else if(password.length<6){
+			alert("password is short");
+		}
+else {
+			document.write(correct);
+		}
+	}
+document.write("<br>");*/
+
+	/*function validatepassword(){
+		var password1 = document.f1.password1.value;
+		var password2 = document.f1.password2.value;
+
+		if(password1==password2){
+			alert("password is right");
+
+		}
+		else{
+			alert("password must be same");
+		}
+	}*/
+function validate(){
+	var num = document.myform.num.value;
+	if(isNaN(num))
+	{
+		document.getElementById("numloc").innerHTML ="error";
+		return false;
+	}
+	else{
+		return true;
+	}
+}
+/*function validateemail(){
+	var x = document.myform.email.value;
+	var atposition = x.indexOf("@");
+	var dotposition = x.lastIndexOf(".");
+	if(atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
+		alert("please enter valid email address");
+	}
+
+}*/
+</script>
+
+<!--<form name="myform" method="post" action="" onsubmit="validateform();">
+Name: <input type="text" name="name">
+password: <input type="password" name="password">
+<input type="submit" value="register"> 
+</form>-->
+
+<!--<form name="f1" method="post" onsubmit="validatepassword();">
+	password: <input type="password" name="password1">
+	retype password <input type="password" name="password2">
+	<input type="submit" value="submit"></form>-->
+
+<form name="myform" method="" action="" onsubmit="return validate();">
+		<input type="text" name="num">
+		<span id="numloc"></span>
+		<input type="submit" name="" value="submit">
+	</form>
+
+	<!--<form name="myform" method="post" onsubmit="validateemail();">
+		Email<input type="text" name="email">
+		<input type="submit">
+	</form>-->
+
+
+
+</body>
+</html>

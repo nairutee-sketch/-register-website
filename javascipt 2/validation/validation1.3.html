@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>validation1.3</title>
+</head>
+<body>
+<script>
+	/*function validateform(){
+		var name = document.myform1.name.value;
+		var password = document.myform1.password.value;
+
+		if(name==null || name==""){
+			alert("name cannot be blank");
+		}
+		else if(password.length<6){
+			alert("password cannot be short");
+		}
+		else{
+			document.write("name and pasword are correct");
+		}
+	}*/
+	document.write("<br>");
+	/*function validatepassword(){
+		var password1 = document.myform2.password1.value;
+		var password2 = document.myform2.password2.value;
+
+		if(password1==password2){
+			alert("password is correct");
+		}
+		else {
+			alert("password incorrect");
+		}
+	}*/
+	document.write("<br>");
+
+/*function validatenum()
+{
+	var num= document.myform3.num.value;
+	if(isNaN(num))
+	{
+		document.getElementById("numloc").innerHTML="error";
+		return false;
+	}
+	else {
+		document.write("no error");
+		return true;
+	}
+}*/
+document.write("<br>");
+
+function validateemail(){
+	var x = document.myform4.email.value;
+   var atposition= x.indexOf("@");
+	var dotposition=x.lastIndexOf(".");
+	if(atposition<1 || dotposition<atposition+2 ||dotposition+2>=x.length){
+		alert ("please enter valid email address");
+	}
+
+}
+
+
+
+</script>
+<!--<form name="myform1" method="post" onsubmit="validateform();">
+	Name: <input type="text" name="name">
+	password:<input type="password" name="password">
+	<input type="submit" value="register"> </form><br>-->
+
+<!--<form name="myform2" method="post" onsubmit="validatepassword();">
+	password: <input type="password" name="password1">
+	re-password:<input type="password" name="password2">
+	<input type="submit" value="submit"></form>-->
+
+<!--<form name="myform3" onsubmit=" return validatenum();">
+	<input type="text" name="num">
+	<span id="numloc"></span>
+	<input type="submit" value="submit"> </form> -->
+
+	<form name="myform4" onsubmit="validateemail();">
+		Email:<input type="text" name="email">
+		<input type="submit"></form>	
+
+
+
+
+
+</body>
+</html>

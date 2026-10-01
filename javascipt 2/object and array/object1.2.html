@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>object1.2</title>
+</head>
+<body>
+	<script>
+		//object
+		var a ={
+			name: "nairuti"
+		};
+	document.write(a.name);
+document.write("<br>");
+
+var person={
+	name:"nairuti",
+	age: 34,
+	city: "mumbai"
+	};
+	document.write(person.age);
+document.write("<br>");
+
+	//using new keyword
+	function per(name,age,city)
+	{
+		this.name=name;
+		this.age=age;
+		this.city=city;
+	}
+	 var per1=new per('harsh','34','mumbai');
+	 var per2=new per('gita','33','mumbai')	;
+	 document.write(per1.city);
+document.write("<br>");
+
+//eg 
+/*var i={
+	name="aman",
+	age= 32,
+	city="mumbai"
+};
+//adding
+i.email='abcd@gmail.com';
+document.write(i);
+document.write("<br>");
+
+//modifying
+age=31;
+document.write(i);
+document.write("<br>");
+
+//remove
+delete i.city;
+document.write(i);*/
+</script>
+</body>
+</html>

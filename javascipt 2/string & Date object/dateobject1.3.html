@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>date object1.3</title>
+</head>
+<body>
+	<script>
+var aa = new Date();
+document.write(aa);
+document.write("<br>");
+
+var day = aa.getDate();
+var month = aa.getMonth()+1;
+var year = aa.getFullYear();
+document.write("<br> Date is:"+day+"/"+month+"/"+year);
+
+function a(){
+	var today = new Date();
+	var h = today.getHours();
+	var m = today.getMinutes();
+	var s = today.getSeconds();
+	document.getElementById("txt").innerHTML=h+":"+m+":"+s;
+}
+
+</script>
+<h1 id="txt"> today's time is</h1> 
+<button onclick="a();">click me</button>
+</body>
+</html>

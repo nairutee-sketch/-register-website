@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>validation1.5</title>
+</head>
+<body>
+<script>
+	/*function validate(){
+		var name = document.form.name.value;
+		var password = document.form.password.value;
+
+		if(name==null || name==""){
+			alert("name cannot be blank");
+		}
+		else if(password.length<6){
+			alert("password is too short");
+		}
+		else {
+			alert("both are correct");
+		}
+
+	}*/
+
+	/*function validatepassword(){
+		var password1 = document.form1.password1.value;
+		var password2 = document.form1.password2.value;
+		if(password1==password2){
+			alert("password are correct");
+		}
+		else{
+			alert("password are incorrect");
+		}
+	}*/
+
+	/*function validatenum(){
+    var num= document.form2.number.value;
+		if(isNaN(num)){
+      document.getElementById("numloc").innerHTML="error";
+      return false;
+	}
+	else{
+		alert("Not error");
+		return true;
+	}
+	}*/
+
+function validateemail(){
+	var x = document.form3.email.value;
+	var atposition = x.indexOf("@");
+	var dotposition = x.lastIndexOf(".");
+	if(atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
+		alert("please enter validate email address");
+	}
+}
+
+</script>
+<!--<form name="form" method="" action="" onsubmit="validate();">
+	name: <input type="text" name="name">
+	password:<input type="password" name="password">
+	<input type="submit" value="submit"></form>-->
+
+	<!--<form name="form1" method="" action="" onsubmit="validatepassword();">
+	password1: <input type="password" name="password1">
+	password2:<input type="password" name="password2">
+	<input type="submit" value="submit"></form>-->
+
+	<!--<form name="form2" onsubmit="return validatenum();">
+		<input type="text" name="number">
+		<span id="numloc"></span>
+		<input type="submit" value="submit"></form>-->
+
+		<form name="form3" onsubmit="validateemail();">
+			Email: <input type="text" name="email">
+			<input type="submit" value="submit">
+		</form>
+</body>
+</html>

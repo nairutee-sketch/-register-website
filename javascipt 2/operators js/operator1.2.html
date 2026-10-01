@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>operator1.2</title>
+</head>
+<body>
+<script>
+	//arthematic opearator +,-,*,/
+	var a = 10;
+	var b =20;
+	var c = 30;
+	document.write(a+b); //addition
+	document.write("<br>");
+	document.write(a-b);//subtraction
+	document.write("<br>");
+	document.write(a*b);//multiplication
+	document.write("<br>");
+	document.write(a/b);//division
+	document.write("<br>");
+
+	//comparison operator < less,> greater,<= less than equalto,
+	// >= greater than equal to ,== equal,!= not equal to
+	document.write(a<b);
+	document.write("<br>");
+	document.write(a<=b);
+	document.write("<br>");
+	document.write(a>b);
+	document.write("<br>");
+	document.write(a>=b);
+	document.write("<br>");
+	document.write(a==b);
+	document.write("<br>");
+	document.write(a!=b);
+	document.write("<br>");
+
+	//logical operator &&,||,!
+	// && and opearator if  both true then true otherwise false
+     document.write(a>b && a>c);//f
+     document.write("<br>");
+     document.write(a>b && a<c);//f
+     document.write("<br>");
+     document.write(a<b && a<c);//t
+     document.write("<br>");
+     document.write(a<b && a>c);//f
+     document.write("<br>");
+
+     // || or opearator if one condition is true then its true
+
+     document.write(a>b || a>c);// f
+     document.write("<br>");
+     document.write(a>b || a<c);// t
+     document.write("<br>");
+     document.write(a<b || a<c);// t
+     document.write("<br>");
+     document.write(a<b || a>c);//t
+     document.write("<br>");
+
+     //! opearator means vice-versa of true and false
+
+     document.write(!(a>b && a>c));//t
+     document.write("<br>");
+     document.write(!(a>b && a<c));//t
+     document.write("<br>");
+     document.write(!(a<b && a<c));//f
+     document.write("<br>");
+     document.write(!(a<b && a>c));//t
+     document.write("<br>");
+
+     //bitwise operator are & and , | or , ^ x-nor
+
+     document.write(a&b);//0
+     document.write("<br>");
+     document.write(a|b); //30
+     document.write("<br>");
+     document.write(a^b);//30
+     document.write("<br>");
+ 
+ //increment ++ and decrement -- operator
+     document.write(a++);  //11
+     document.write("<br>");
+     document.write(a--);   //9
+     document.write("<br>");
+
+     //special operator
+//a is greater than b false print b or true print a
+     document.write(a>b?a:b); //20
+     document.write("<br>");
+</script>
+</body>
+</html>

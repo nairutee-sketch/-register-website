@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>array1.2</title>
+</head >
+
+
+<script>
+//define array
+	/*var age=[20,21,23,22,24,25];
+	document.write(age);
+      document.write("<br>");*/
+
+
+//array with forloop
+  /*var i ;
+   var country=["India","newzealand","usa"];
+for(i=0;i<country.length;i++)
+{
+	document.write(country[i]+"<br>");
+}*/
+
+//using new keyword
+
+document.write("<br>");
+var num;
+var con = new Array();
+
+con[0]="japan";
+con[1]="india";
+con[2]="usa";
+
+for(num=0;num<con.length;num++){
+	document.write(con[num] + "<br>");
+
+}
+
+//array constructor
+document.write("<br>");
+var employee = new Array("rohit","vivek","john");
+for(var i=0;i<employee.length;i++){
+	document.write(employee[i] +"<br>");
+
+}
+document.write("<br>");
+
+//Accessing elements of an array
+
+var cars=["bmw","toyota","accord"];
+document.write(cars[1]);
+document.write("<br>");
+
+//accessing first element of an array
+document.write(cars[0]);
+document.write("<br>");
+
+//accessing last element of an array
+//length cannot be start from zero that is y to know the length we use length-1.
+var last = [cars.length-1];
+document.write(last);
+
+document.write("<br>");
+
+//modifying the array
+
+cars[1] = "ferrari";
+document.write(cars);
+document.write("<br>");
+
+//adding element in the array
+cars.push("gtr");
+document.write(cars);
+document.write("<br>");
+
+//remove element from the array
+cars.pop();
+document.write(cars);
+document.write("<br>");
+
+//concat()
+var arr1 =[1,2];
+var arr2 =[3,4];
+
+document.write(arr1.concat(arr2));
+document.write("<br>");
+
+//foreach()
+
+var mynumber = [1,2,3,4,5];
+mynumber.forEach(num=>{
+	document.write(num);
+});
+
+
+
+
+       
+
+
+</script>
+
+</body>
+</html>

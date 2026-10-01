@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>object, new , array</title>
+</head>
+<body>
+	<!-- <h1>hello</h1>
+<script>
+	//object literal
+
+  /*var a = {name:"alvin"};
+  document.write(a.name);*/
+
+  /*var per = {
+        name:"harsh",
+        age:30,
+        city:"ghaziabad"
+        };
+    document.write(per.city);*/
+
+
+     //using new keyword
+
+       /* function person(name,age,city){
+        	this.name = name;
+        	this.age = age;
+        	this.city = city;
+        }
+
+        let person1 = new person('abcd',34,'mumbai');
+        let person2 = new person('rstuv',31,'delhi');
+        document.write(person1.name);
+
+
+
+        //eg
+
+        let person={
+        	name:'aman',
+        	age: 34,
+        	city:'delhi'
+
+        };
+
+        //modifying
+         person.age = 31;
+
+         
+
+      //adding
+     person.email = 'abcd@gmail.com';
+
+        //removing
+      delete person.city; */
+
+      //Array
+
+      var age[20,21,23,22,24,25];
+      
+
+      var country = ["India","newzealand","usa"];
+       for(var i=0;i<lenght;i++){
+       	document.write(country[i]);
+       }
+
+       //using new keyword
+
+       var num
+       var country = new Array();
+       country[0]="japan";
+       country[1]="spain";
+       country[2]="germany";
+       for(num=0;num<country.lenght;num++){
+        document.write(country[num]);
+       }
+
+
+       //array constructor
+
+       var employee = new Array("rohit","vivek","john")
+       for(var i=0;i<employee.lenght;i++){
+        document.write(employee[i]);
+       }
+
+       //accessing elements of an array
+
+       var cars =["bmw","mercedes","accord"];
+       document.write(cars[1]);
+
+       //first element of an array
+     var cars =["bmw","mercedes","accord"];
+     document.write(cars[0]);
+
+     //last element of array
+     var cars =["bmw","mercedes","accord"];
+     var car = cars[cars.lenght-1];
+     document.write(car);
+
+     //modifying element
+     var cars =["bmw","mercedes","accord"];
+      cars[1]="ferrari";
+      document.write(cars);
+
+      //adding element
+      var cars =["bmw","mercedes","accord"];
+      cars.push("GTR");
+      document.write(cars);
+
+      //removing last element
+       var cars =["bmw","mercedes","accord"];
+       cars.pop();
+       document.write(cars);
+
+       //concat() method
+
+       var arr1=[1,2];
+       var arr2=[3,4];
+       document.write(arr1.concat(arr2));
+
+       //foreach() method
+
+       var myno=[1,2,3,4,5];
+
+       myno.forEach(num=>{
+        document.write(num);
+       })
+</script> -->
+ <script>
+    var per = {name:"harsh",  age:30,  city:"ghaziabad"};
+    document.write(per.city);
+
+    document.write("<br>");
+
+function person(name,age,city){
+            this.name = name;
+            this.age = age;
+            this.city = city;
+        }
+
+        var person1 = new person('abcd',34,'mumbai');
+        var person2 = new person('rstuv',31,'delhi');
+        document.write(person1.name);
+        document.write("<br>");
+        document.write(person2.age);
+
+        var person={
+            name:"aman",
+            age: 34,
+            city:"delhi"
+             };
+
+        //modifying
+         person.age = 31;
+
+         
+
+      //adding
+     person.email = 'abcd@gmail.com';
+
+        //removing
+      delete person.city; 
+      document.write("<br>");
+      document.write(person.age);
+      document.write("<br>");
+      document.write(person.email);
+      document.write("<br>");
+      document.write(person.city);
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

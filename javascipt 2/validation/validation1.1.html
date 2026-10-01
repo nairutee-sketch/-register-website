@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Validation</title>
+	<style>
+		img{
+			width:20px;
+			height:20px;
+
+		}
+	</style>
+</head>
+<body>
+<script>
+	/*function validateform(){
+
+     var name= document.myform.name.value;
+     var password = document.myform.password.value;
+
+     if(name==null || name==""){
+     	alert("name cannot be blank");
+     }
+     else if(password.length<6){
+     	alert("password must be atleast 6 characters long");
+     }
+     else{
+     	document.write("correct");
+     }
+
+	}
+	document.write("<br>");*/
+
+
+/*function validatepassword()
+{
+var password= document.f1.password.value;
+var repassword = document.f1.password1.value;
+if(password == repassword){
+	alert("password is correct");
+	}
+	else{
+		alert("password must be same");
+	}
+}
+document.write("<br>");*/
+
+/*function validateNumber(){
+var num =document.form.num.value;
+if(isNaN(num))
+{
+document.getElementById("numloc").innerHTML="Error";
+return false;
+}
+else{
+	
+return true;
+}
+}
+document.write("<br>");*/
+
+function validate(){
+	var name = document.form1.name.value;
+	var password = document.form1.password.value;
+	if(name.length<1){
+		document.getElementById("nameloc").innerHTML= "<img src='10275344.img'/> please enter your name" 
+	}
+	else {
+		document.getElementById("nameloc").innerHTML= "<img src='images.img'/>"
+	}
+
+	if (password.length < 6){
+		document.getElementById("passwordloc").innerHTML="<imgsrc= '10275344.img'/>please enter your password"
+	}
+	else{	
+		document.getElementById("passwordloc").innerHTML="<img src='images.img'/>"
+
+	}
+}
+
+/*function validateemail(){
+	var x = document.myform.email.value;
+	var atposition = x.indexOf("@");
+    var dotposition = x.lastIndexOf(".");
+
+    if(atposition<1 || dotposition<atposition+2 ||dotposition+2>=x.length){
+    	alert("please enter valid email address");
+    }
+
+}*/
+
+</script>
+<!--<form name="myform" method="post" action="" onsubmit="validateform();">
+Name: <input type="text" name="name">
+Password: <input type="password" name="password">
+<input type="submit" value="register"> 
+</form><br> -->
+
+<!--<form name = "f1" method="post" onsubmit="validatepassword();">
+password<input type="password" name="password">
+retype password <input type="password" name="password1">
+<input type ="submit"> 
+</form> <br>-->
+
+<!--<form name="form" onsubmit=" return validateNumber();">
+	Number:<input type="text" name="num">
+	<span id="numloc"></span> <br>
+	<input type="submit" value="submit">
+</form> <br>--> 
+
+<form name="form1" onsubmit=" return validate();">
+<table>
+	<tr>
+		<td> enter name:</td>
+		<td><input type="text" name="name"/>
+			<span id="nameloc"></span> </td>
+		</tr>
+		<tr> 
+			<td> Enter password </td>
+			<td> <input type="password" name="password"/>
+				<span id="passwordloc"></span> </td>
+			</tr>
+			<tr>
+				<td colspan="2"> <input type="submit" value="register"/>
+				</td>
+			</tr>
+</table>
+</form>
+
+<!--<form name="myform" method="post" onsubmit="validateemail();">
+	Email: <input type="text" name="email">
+	<input type="submit" value="register">
+</form>-->
+</body>
+</html>
