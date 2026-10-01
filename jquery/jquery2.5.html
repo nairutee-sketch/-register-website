@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jquery2.5</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script><script>
+			$(document).ready(function(){
+				$("#flip").click(function(){
+					$("#panel").slideDown();
+				});
+			});
+
+$(document).ready(function(){
+				$("#flip").click(function(){
+					$("#panel").slideUp();
+				});
+			});
+$(document).ready(function(){
+				$("#flip").click(function(){
+					$("#panel").slideToggle();
+				});
+			});
+
+$(document).ready(function(){
+	$("button").click(function(){
+		$("div").animate({
+			left:'5px',
+			width:'50px',
+			height:'50px'
+		});
+	});
+});
+
+	</script>
+	<style>
+		#flip,#panel{
+			padding: 5px;
+			text-align: center;
+			background-color: orange;
+			border:1px solid black;
+		}
+
+		#panel{
+			padding:5px;
+			display:none;
+		}
+	</style>
+</head>
+<body>
+<!--<div id="flip"> we are slide down</div>
+<div id="panel">Hii jquery</div>-->
+
+<button> click here</button>
+<div style="width:100px; height:100px; position:absolute;background-color: yellow;"></div>
+</body>
+</html>

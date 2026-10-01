@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jquery1.2</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">   
+   </script>
+   <script type="text/javascript" language="javascript">
+
+   /*	$(document).ready (function(){
+   		$("p").css("background-color","pink");
+   	});
+//hide method
+   	$(document).ready(function(){
+   		$("#hide").click(function(){
+   			$("p").hide();
+   		});
+   	});
+//show method
+   	$(document).ready(function(){
+   		$("#show").click(function(){
+   			$("p").show();
+   		});
+   	});*/
+
+ //toggle method
+    /*$(document).ready(function(){
+    	$("button").click(function(){
+    		$("div.d1").toggle();
+    	});
+    });*/
+
+  //fadeIn method
+    /*$(document).ready(function(){
+$("button").click(function(){
+$("#div1").fadeIn();
+$("#div2").fadeIn("slow");
+$("#div3").fadeIn(3000);
+});
+    });*/
+
+ //fadeOut method
+   /*  $(document).ready(function(){
+$("button").click(function(){
+$("#div1").fadeOut();
+$("#div2").fadeOut("slow");
+$("#div3").fadeOut(3000);
+});
+    });*/
+
+      $(document).ready(function(){
+$("button").click(function(){
+$("#div1").fadeToggle();
+$("#div2").fadeToggle("slow");
+$("#div3").fadeToggle(3000);
+});
+    });
+
+
+
+   </script>
+</head>
+<body>
+<!--<p> this is the first jquery pink backgroung paragraph</p>
+<button id="hide">hide me</button>
+<button id="show">show me</button>-->
+
+<!--<div class="d1">this div will show and hide</div>
+<button>toggle</button>-->
+
+<!--<p> This is a fadeIn method</p>
+<button>click me</button>
+<div id="div1" style="width:80px;height:80px;display:none;background-color:blue;"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:green;"></div>-->
+
+<!--<p> This is a fadeOut method</p>
+<button>click me</button>
+<div id="div1" style="width:80px;height:80px;background-color:blue;"></div><br>
+<div id="div2" style="width:80px;height:80px;background-color:red;"></div><br>
+<div id="div3" style="width:80px;height:80px;background-color:green;"></div>-->
+
+<p> This is a fadetoggle method</p>
+<button>click me</button>
+<div id="div1" style="width:80px;height:80px;background-color:blue;"></div><br>
+<div id="div2" style="width:80px;height:80px;background-color:red;"></div><br>
+<div id="div3" style="width:80px;height:80px;background-color:green;"></div>
+
+</body>
+</html>

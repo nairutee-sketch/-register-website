@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jquery 2.3</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script><script>
+		//slide down
+		$(document).ready(function(){
+			$("#flip").click(function(){
+				$("#panel").slideDown();
+
+				
+			});
+		});
+
+		$(document).ready(function(){
+			$("#flip").click(function(){
+				$("#panel").slideUp();
+
+				
+			});
+		});
+
+		$(document).ready(function(){
+			$("#flip").click(function(){
+				$("#panel").slideToggle();
+
+				
+			});
+		});
+
+		$(document).ready(function (){
+			$("button").click(function(){
+				$("div").animate({
+					left:'250px',
+					height:'+=150px',
+					width:'+=150px'
+				});
+			});
+		});
+	</script>
+	<style>
+		#flip,#panel{
+			padding: 5px;
+			text-align: center;
+			background-color: yellowgreen;
+			border:1px solid black;
+		}
+		#panel{
+			padding: 5px;
+			/*display: none;*/
+		}
+	</style>
+</head>
+<body>
+<div id="flip"> click here to slide toggle</div>
+<div id="panel">Hii Jquery</div>
+
+<button>start animation</button>
+<div style="width:100px height=100px position:absolute; background:blue"></div>
+</body>
+</html>
