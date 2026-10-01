@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>css1 </title>
+
+	<!-- this link is used to attach external css -->
+	<link rel="stylesheet" type="text/css" href="externalcss1.css">
+
+	<!-- this is known as internal css which is written under <style> </style>-->
+<style>
+      *{   /* this is a universal selector where * is used */
+      	 padding: 0;
+      	 margin:0 auto;
+      }
+
+	.a{     /* this is a class selector where . is used */
+
+		background: yellow;
+	}
+
+	#a{  /*this is a id selector where # is used */
+
+		background: orange;
+	}
+
+	h1{ /* this is known as element selector  where key = background and value = blue */
+		background: hotpink;
+	}
+	h1 a{ /* this is a group selector */
+		 background: indianred;
+
+	}
+
+	body{ /* this the properties of background */
+		background-image: url("FE9655B7-5566-43AF-A9F8-D7A2C3A59BB6.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+	}
+</style>
+</head>
+<body>
+<h1> h1 </h1> 
+
+<h1 class="a"> h1 </h1>
+
+<h1 id="a"> h1 </h1>
+
+<h1> h1 </h1>
+
+<h1 style="color : orange;"> h1 </h1> <!-- this is known as inline css -->
+
+<h1> <a href="" >google</a> </h1>
+
+<h2> this is a sunset view. this photography is taken by iphone.<h2>
+
+</body> 
+</html>

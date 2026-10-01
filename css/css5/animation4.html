@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>animation4</title>
+	<style> 
+		div {
+			width: 400px;
+			height: 400px;
+			border: 1px solid black;
+			background: linear-gradient(orange,blue,pink,yellow);
+			/*transform: scale(1.0);
+			transform:skew(20deg);
+			transform:translate(100px);
+			transform: rotate(50deg);*/
+
+			animation: SD 1s infinite;
+			animation-duration: 10s;
+			animation-delay: 2s;
+			animation-direction: reverse;
+
+		}
+		/*@keyframes SD {
+			to {
+				width: 300px;
+				height: 200px;
+				background: orange;
+			}
+			from {
+				width: 200px;
+				height: 100px;
+				background: pink;
+			}
+		}*/
+		@keyframes SD {
+			0%{
+				width: 400px;
+				height:300px;
+				background: yellow;
+				transform: skew(10deg);
+				transform: translate(10px);
+				margin-top:(100px);
+			}
+			25%{
+				width: 400px;
+				height:300px;
+				background: seagreen;
+				transform: skew(10deg);
+				transform: translate(10px);
+				transform: rotate(50deg);
+				margin-top:(100px);
+			}
+			50% {
+				width: 400px;
+				height:300px;
+				background: palevioletred;
+				transform: skew(10deg);
+				transform: translate(10px);
+				transform: rotate(50deg);
+				margin-top:(100px);
+				border-style: double;
+				border-width: 5px;
+				border-color: turquoise;
+
+			}
+			75%{
+				width: 400px;
+				height:300px;
+				background: green;
+				transform: skew(10deg);
+				transform: translate(10px);
+				transform: rotate(50deg);
+				margin-top:(100px);
+				margin-bottom:(100px);
+				border-style: double;
+				border-width: 5px;
+				border-color: turquoise;
+
+			}
+			100% {
+				width: 200px;
+				height: 300px;
+				border-radius: 100%;
+				border-width: 5px;
+				border-color: palevioletred;
+				background: seagreen;
+			}
+
+		}
+	</style>
+</head>
+<body>
+<div> </div>
+</body>
+</html>

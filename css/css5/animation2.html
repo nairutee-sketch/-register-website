@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>animation2</title>
+	<style> 
+		div {
+			width: 200px;
+			height: 200px;
+			border: 1px solid black;
+			background: linear-gradient(red,green,yellow,blue,violet);
+			/*background: radial-gradient(red,green,yellow,blue,violet);*/
+			/*transform: scale(1.0);
+			transform: skew(15deg);
+			transform:rotate(45deg);
+			transform: translate(100px);*/
+
+			animation: SD 1s infinite;
+			animation-duration: 10s;
+			animation-delay :3s;
+			animation-direction: reverse;
+		}
+		/*@keyframes SD {
+			to {
+				background: blue;
+				width: 400px;
+				height: 100px;
+
+			}
+			from{
+				background: yellow;
+				width: 200px;
+				height: 100px;
+			}
+		}*/
+		@keyframes SD {
+			0%{
+				width: 100px;
+				height: 300px;
+				background: violet;
+				margin-top: 100px;
+				transform: translate(10px);
+				transform: skew(50deg);
+
+			}
+			25%{
+				width: 100px;
+				height: 300px;
+				background: violet;
+				margin-top: 100px;
+				transform: translate(10px);
+				transform: skew(50deg);
+				transform: rotate(45deg);
+
+			}
+			50% {
+				width: 200px;
+				height: 400px;
+				background: violet;
+				margin-top: 100px;
+				transform: translate(10px);
+				transform: skew(50deg);
+				transform: rotate(45deg);
+				border-width: 10px;
+				border-style: double;
+				border-color: indianred;
+
+				
+			}
+			75% {
+				width: 200px;
+				height: 400px;
+				background: gold;
+				margin-top: 200px;
+				margin-bottom: 100px;
+				transform: translate(10px);
+				transform: skew(50deg);
+				transform: rotate(45deg);
+				border-width: 10px;
+				border-style: double;
+				border-color: indianred;
+
+			}
+			100% {
+				width: 100px;
+				height: 300px;
+				background: green;
+				border-radius: 100%;
+				border-width:10px;
+				border-color: magenta;
+
+			}
+		}
+	</style>
+</head>
+<body>
+<div> </div>
+</body>
+</html>
