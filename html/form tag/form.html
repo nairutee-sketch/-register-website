@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+</head>
+<body>
+       <form action= "" method="" enctype="multipart/form-data">
+       	<!-- two type of method get() - shows sensitive data like password
+       	and post() - dosen't show any data and default method is get() -->
+        <!-- enctype ="multipart/form-data" means stores vidoes and images -->
+        <!-- action = to redirect to browser or different page -->
+  
+
+       	<table>
+       		<tr>
+       			<th>
+       				<label>Name</label>
+       			</th>
+
+       			<td> 
+       				<input type="text" placeholder="Enter your name" maxlength="30"
+       				minlength="1" value=""  required=""
+       				name="">  <!-- placeholder means dummy text -->
+       				<!-- readyonly means no one can edit it -->
+       				<!-- value= data coming from database -->
+       				<!-- name is used for grouping -->
+       			</td>
+       		</tr> 
+       		<tr>
+       			<th>
+       				<label>password</label> 
+       			</th>
+       			<td>
+       				<input type="password" required="" name="">
+       			</td>
+       		</tr>
+       		<tr>
+       			<th>
+       				<input type="submit" value="submit now" name="">
+       			</th>
+       		</tr>
+       		<tr>
+       			<th>
+       				<label>Gender</label>
+       			</th>
+       			<td>
+       				<input type= "radio" value="Male" name="a"> Male
+       				<input type="radio" value="Female" name="a"> Female
+
+                    <!--name is used for grouping -->
+       			</td>
+       		</tr>
+
+            <tr>
+            	<th> <label>Language</label> </th>
+            	<td> <input type="checkbox" name="" value="hindi">hindi
+            		<input type="checkbox" name="" value="English">English
+            		<input type="checkbox" name="" value="Marathi">Marathi
+            	</td>
+                </tr>
+
+                <tr>
+                	<th> <label>select state </label>
+
+                	</th>
+                	<td> <select>
+                		<option> Maharashtra </option>
+                		<option> Gujurata </option>
+                		<option> Rajashtan </option>
+                        </select>
+                    </td>
+                </tr> 
+                <tr>
+                	<th> <label> upload image </label> </th>
+                	<td> <input type =  "file" name= " "> </td> 
+
+
+                </tr>
+
+                <tr>
+                	<th> <label> select date of birth </label> </th>
+                	 <td> <input type = "date" name=""> </td>
+                </tr>
+                <tr>
+                	<th> <label> select color </label></th>
+                	<td> <input type="color" name=""></td>
+                </tr>
+
+                <tr>
+                	<th> <input type="submit" name="" value="submit"></th>
+                	<th> <input type="reset" name=" " value="reset"></th>
+       	</tr></table>
+       	</form>
+</body>
+</html>
